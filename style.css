@@ -75,58 +75,24 @@ li div{
         justify-content: center; 
         align-items: center; 
       margin-right: 10px;
+      
 }
 nav .icon{
 display:none ;
+font-size: 28px;
 
 
 
 }
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
     
-
-    nav .nav-list{
-        display: none;
+    .nav-list li{
+        font-size: 16px;
     }
-
-.nav-list ul{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-   
-   }
-.nav-list{
-    width: 100%;
-    position: absolute;
-    left: 50px;
-    z-index: 1;
-   background-color: #fff;
-    
-}
-   nav .icon{
-    display: block;
-    display: flex;
-    justify-content: flex-end;
-   }
-    
-    nav .icon:hover~.nav-list {
-        display: block;
-       
-       
-
-    }
-    .contain{
-        position: relative;
-        width: 100%;
-      
- 
-       
+    .nav-list button{
+        width: 100px;
+        height: 50px;
     }
 
 
@@ -148,12 +114,12 @@ display:none ;
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+    margin-bottom: 16px;
    }
 .nav-list{
     width: 100%;
     position: absolute;
-    left: 50px;
+    left: 0px;
     z-index: 1;
    background-color: #fff;
     
@@ -163,13 +129,13 @@ display:none ;
     display: flex;
     justify-content: flex-end;
    }
-    
+/*     
     nav .icon:hover~.nav-list {
         display: block;
        
        
 
-    }
+    } */
     .contain{
         position: relative;
         width: 100%;
@@ -200,12 +166,13 @@ display:none ;
     display: flex;
     width: 100%;
     flex-direction: column;
+    margin-bottom: 16px;
    
    }
 .nav-list{
     width: 100%;
     position: absolute;
-    left: 50px;
+    left: 0px;
     z-index: 1;
    background-color: #fff;
     
@@ -216,12 +183,12 @@ display:none ;
     justify-content: flex-end;
    }
     
-    nav .icon:hover~.nav-list {
+    /* nav .icon:hover~.nav-list {
         display: block;
        
        
 
-    }
+    } */
     .contain{
         position: relative;
         width: 100%;
@@ -249,12 +216,13 @@ display:none ;
     display: flex;
   
     flex-direction: column;
+    margin-bottom: 16px;
    
    }
 .nav-list{
   
     position: absolute;
-    left: 50px;
+    left: 0;
     z-index: 1;
    background-color: #fff;
     
@@ -265,12 +233,12 @@ display:none ;
     justify-content: flex-end;
    }
     
-    nav .icon:hover~.nav-list {
+    /* nav .icon:hover~.nav-list {
         display: block;
        
        
 
-    }
+    } */
     .contain{
         position: relative;
         width: 100%;
@@ -415,7 +383,9 @@ display:none ;
 
 input[type="checkbox"]:checked{
     background-color: #CB9C62;
+   
 }
+
 .main-content{
     width: 40%;
     display:flex ;
@@ -901,41 +871,15 @@ footer ul{
 }
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
-    footer{
-        display: flex;
-        flex-direction: column;
-    
-
-    }
-  
    
-    .footer-list ul{
-   
-       
-        display: flex;
-        flex-direction: row;
-        column-gap: 16px;
-        flex-wrap: wrap;
-     
-    }
-
-    footer .icons{
-        width: 80%;
-    }
-
     .footer-list li{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 16px;
     }
-    .footer-list{
-        width: 100%;
-    }
-
    
 
    
    
-  }
+  } 
 
   
    
@@ -964,11 +908,15 @@ footer ul{
     }
 
     .footer-list li{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 16px;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .footer-list{
         width: 100%;
+        justify-content: space-around;
     }
 
    
@@ -996,19 +944,26 @@ footer ul{
         flex-direction: row;
         column-gap: 16px;
         flex-wrap: wrap;
+
      
     }
 
     footer .icons{
-        width: 80%;
+        width:80%;
+
     }
 
     .footer-list li{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 16px;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .footer-list{
         width: 100%;
+        justify-content: space-around;
+        
     }
 
    
@@ -1020,9 +975,7 @@ footer ul{
     footer{
         display: flex;
         flex-direction: column;
-      
 
-    
 
     }
   
@@ -1034,7 +987,7 @@ footer ul{
         flex-direction: row;
       
         flex-wrap: wrap;
-          column-gap: 16px;
+        
        
     }
 
@@ -1043,11 +996,17 @@ footer ul{
     }
 
     .footer-list li{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 16px;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
     }
     .footer-list{
         width: 100%;
+        justify-content: space-around;
+
     }
 
 

@@ -14,7 +14,7 @@
       <img src="images/logo.png" alt="" />
 
       <div class="contain">
-      <div class="icon"><i class="fa-solid fa-bars" ></i></div>
+      <div class="icon" onclick="appear()"><i class="fa-solid fa-bars" ></i></div>
       <div class="nav-list">
         <ul>
           <li>الرئيسيه</li>
@@ -60,11 +60,11 @@
         <h3>افضل مكان لاكتشاف عقارات مذهله باسعار رائعه</h3>
 
         <form>
-          <input type="checkbox" id="vehicle1" name="vehicle1" />
+          <input type="checkbox"/>
           <label for="vehicle1"> افضل الاسعار و بدون فوائد</label><br />
-          <input type="checkbox" id="vehicle2" name="vehicle2" />
+          <input type="checkbox"/>
           <label for="vehicle2">مستاجر جديد ودعم سريع </label><br />
-          <input type="checkbox" id="vehicle3" name="vehicle3" />
+          <input type="checkbox"/>
           <label for="vehicle2">افضل العقارات والمناطق الحيويه</label><br />
 
           <button>اكتشف وحدتك</button>
@@ -179,5 +179,15 @@
         <img src="images/Group 131723.svg" alt="" />
       </div>
     </footer>
+
+    <script>
+      var toggle =document.querySelector(".nav-list");
+       function appear(){
+
+        toggle.style.display='block';
+
+       }
+
+    </script>
   </body>
 </html>
